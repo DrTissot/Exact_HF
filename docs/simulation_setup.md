@@ -1,17 +1,17 @@
-# Ansys HFSS Simulation Setup
+# Ansys HFSS Simulation Setup (Coplanar Lines)
 
-Ce document détaille la configuration de base utilisée dans **Ansys Electronics Desktop (HFSS)** pour générer les fichiers `.s1p` de ce dataset.
+This document details the specific configuration used to generate the S-parameter dataset.
 
-## Configuration de la simulation
-* **Logiciel / Solveur :** Ansys HFSS
-* **Impédance de référence ($Z_0$) :** 50 Ohms
-* **Paramètre extrait :** Coefficient de réflexion ($S_{11}$) à 1 port.
+## 🛠 Simulation Environment
+* **Software:** Ansys HFSS
+* **Geometry:** Coplanar Lines (CPW - Coplanar Waveguide and CPWG - Coplanar Waveguide with Ground).
+* **Excitation:** Waveport (calibrated for coplanar topology).
+* **Reference Impedance ($Z_0$):** 50 $\Omega$.
 
-## Méthode d'extraction
-Les données fournies sont les mesures S11 brutes. Le lien théorique entre ce paramètre mesuré et l'impédance d'entrée $Z_{in}$ du matériau est :
+## 📐 Model Details
+* **Dimensions:** Elements on the order of **200 µm** (center trace width and gaps).
+* **Material Under Test (MUT):** Placed in interaction with the line's evanescent field. For CPWG structures, the bottom ground plane ensures better field confinement at high frequencies.
+* **Frequency Range:** Sweep from 0 GHz to 67 GHz.
 
-$$S_{11} = \frac{Z_{in} - 50}{Z_{in} + 50}$$
-
-L'objectif de ce dataset est d'utiliser ces données pour retrouver la permittivité complexe ($\epsilon^*$) et la tangente de perte ($\tan \delta$) du matériau simulé.
-
-*(Note : Les dimensions exactes de l'échantillon et les conditions aux limites du modèle 3D dépendent du fichier projet Ansys d'origine).*
+## 🔬 Characterization Method
+CPW and CPWG topologies are preferred as they allow for broadband characterization with direct contact, while minimizing radiation losses at 67 GHz. The $S_{11}$ signal captured at the Waveport depends on the effective dielectric constant of the line, which is modified by the presence of the tested material. The extraction consists of isolating the material's contribution based on the phase shift and amplitude variation of the reflected signal.
