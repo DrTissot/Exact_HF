@@ -11,7 +11,7 @@ This dataset was created to enable the calculation and analysis of:
 The data is particularly useful for researchers and engineers working on RF circuit design, antennas, or material science at millimeter-wave frequencies.
 
 ## 📊 Technical Characteristics
-* **Frequency Range:** 0 Hz to 67 GHz.
+* **Frequency Range:** 0.1 GHz to 67 GHz.
 * **File Format:** Touchstone (.s1p).
 * **Source/Software:** Ansys Electronics Desktop.
 * **Measured Parameters:** S11 (Magnitude / Phase).
