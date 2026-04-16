@@ -1,4 +1,4 @@
-# RF Dataset 0-67 GHz: S-parameters for Material Characterization
+# RF Dataset 0.1-67 GHz: S-parameters for Material Characterization
 S-parameter database (0-67 GHz) for extracting complex permittivity (epsilon) and loss tangent (delta)
 
 This repository contains a database of **S-parameter** measurements covering a frequency range from **0 to 67 GHz**, generated using **Ansys Electronics Desktop**. The primary purpose of this dataset is to provide the data required for extracting dielectric properties of materials.
