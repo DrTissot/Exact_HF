@@ -9,7 +9,6 @@ This document details the specific configuration used to generate the S-paramete
 * **Reference Impedance ($Z_0$):** 50 $\Omega$.
 
 ## 📐 Model Details
-* **Dimensions:** Elements on the order of **200 µm** (center trace width and gaps).
 * **Material Under Test (MUT):** Placed in interaction with the line's evanescent field. For CPWG structures, the bottom ground plane ensures better field confinement at high frequencies.
 * **Frequency Range:** Sweep from 0.1 GHz to 67 GHz.
 
