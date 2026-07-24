@@ -1,5 +1,5 @@
 # RF Dataset 0.1-67 GHz: S-parameters for Material Characterization
-S-parameter database (0-67 GHz) for extracting complex permittivity (epsilon) and loss tangent (delta)
+S-parameter database (0.1-67 GHz) for extracting complex permittivity (epsilon) and loss tangent (delta)
 
 This repository contains a database of **S-parameter** measurements covering a frequency range from **0 to 67 GHz**, generated using **Ansys Electronics Desktop**. The primary purpose of this dataset is to provide the data required for extracting dielectric properties of materials.
 
@@ -13,9 +13,9 @@ The data is particularly useful for researchers and engineers working on RF circ
 ## 📊 Technical Characteristics
 * **Frequency Range:** 0.1 GHz to 67 GHz.
 * **File Format:** Touchstone (.s1p).
-* **Source/Software:** Ansys Electronics Desktop.
+* **Source/Software:** HFSS - Ansys Electronics Desktop.
 * **Measured Parameters:** S11 (Magnitude / Phase).
-* **Methodology:** Simulation/Measurement of reflection coefficients for material characterization.
+* **Methodology:** Simulation/Measurement of reflection coefficients by coplanar probes (GSG) for material characterization.
 
 ## 📂 Repository Structure
 * `/data`: Contains all raw `.s1p` measurement files.
